@@ -27,6 +27,9 @@
     <div class="container border bg-success" style="padding-top: 10px; color:black;">
         <p id="help">Help report.</p>
     </div><br>
+    <div class="container text-center">
+        <button class="btn btn-success" type="submit" onclick="resetGame()">Reset</button>
+    </div>
     <div class="container"> 
         <div class="image-row d-flex justify-content-center">
             <div >
@@ -129,7 +132,7 @@
                 document.getElementById("score").innerHTML = "Score is unknown"
                 for(let i = 0; i < 25; i++) {
                     if(i != 12) {
-                        document.getElementById(ids[i]).src = "treasure-chest.png"
+                        document.getElementById(ids[i]).src = "treasure-chest.jpg"
                     }
                 }
             }
